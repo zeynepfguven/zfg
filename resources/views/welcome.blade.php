@@ -7,6 +7,9 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-M12bge87CqTrP5qtUEoQRGmW1aO1SBzywDxytmu1s4G9pj5fG7f07To1XKyNdcG6MHHp6jjvG72t3V4K2FdE5Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    
+    <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.4.0/dist/cdn.min.js" defer></script>
+
     <style>
         
     </style>
@@ -20,16 +23,24 @@
         <nav class="hidden sm:flex sm:ml-6 space-x-10">
             <a href="#" class="text-gray-900 inline-flex leading-5	 items-center text-sm font-medium hover:border-gray-300 hover:border-transparent">Ana Sayfa</a>
             <a href="#" class="text-gray-500 inline-flex leading-5 items-center text-sm font-medium hover:border-gray-300 hover:border-transparent">Kurumsal</a>
-            <div class="relative inline-block text-left">
-                <div>
-                    <button type="button" class="text-gray-500 inline-flex leading-5 items-center text-sm font-medium hover:border-gray-300 hover:border-transparent focus:outline-none">
-                        Hizmetler
-                        <svg class="ml-1 h-4 w-4 text-gray-400"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                            <path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/>
-                            <path fill-rule="evenodd" d="M10 3a1 1 0 011 1v10a1 1 0 01-1 1H7a1 1 0 01-1-1V4a1 1 0 011-1h3zm1 8a1 1 0 01-1 1H7a1 1 0 010-2h3a1 1 0 011 1v.5a.5.5 0 00.5.5h.5a.5.5 0 00.5-.5v-3a1 1 0 112 0v3a2 2 0 01-2 2H7a2 2 0 01-2-2H4a2 2 0 01-2-2V7a2 2 0 012-2h3a2 2 0 012 2h-.5a.5.5 0 00-.5.5v3a1 1 0 11-2 0v-3a2 2 0 012-2h3a2 2 0 012 2h.5a.5.5 0 00.5-.5v-3a1 1 0 112 0v3a2 2 0 01-2 2z" clip-rule="evenodd" />
-                        </svg>
-                    </button>
-                </div>
+            
+            <div class="relative inline-block text-left" x-data="{ isOpen: false, activeItem: null }" @mouseenter="isOpen = true" @mouseleave="isOpen = false">
+        <div>
+            <button type="button" class="text-gray-500 inline-flex  leading-5 items-center text-sm font-medium hover:border-gray-300 hover:border-transparent " id="menu-button" aria-expanded="true" aria-haspopup="true">
+                Options
+                <svg class="-mr-1 h-4 w-4 text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                    <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
+                </svg>
+            </button>
+        </div>
+                <div x-show="isOpen" x-transition:enter="transition ease-out duration-100" x-transition:enter-start="transform opacity-0 scale-95" x-transition:enter-end="transform opacity-100 scale-100" x-transition:leave="transition ease-in duration-75" x-transition:leave-start="transform opacity-100 scale-100" x-transition:leave-end="transform opacity-0 scale-95" class="absolute right-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
+            <div class="py-1" role="none">
+                <a href="#" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1" id="menu-item-0" @mouseenter="activeItem = 0" @mouseleave="activeItem = null" :class="{ 'bg-gray-100 text-gray-900': activeItem === 0 }">Hizmet 1</a>
+                <a href="#" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1" id="menu-item-1" @mouseenter="activeItem = 1" @mouseleave="activeItem = null" :class="{ 'bg-gray-100 text-gray-900': activeItem === 1 }">Hizmet 2</a>
+                <a href="#" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1" id="menu-item-2" @mouseenter="activeItem = 2" @mouseleave="activeItem = null" :class="{ 'bg-gray-100 text-gray-900': activeItem === 2 }">Hizmet 3</a>
+               
+            </div>
+        </div>
             </div>
             <a href="#" class="text-gray-500 inline-flex leading-5 items-center text-sm font-medium hover:border-gray-300 hover:border-transparent">Blog</a>
             <a href="#" class="text-gray-500 inline-flex leading-5 items-center text-sm font-medium hover:border-gray-300 hover:border-transparent">İletişim</a>
@@ -46,11 +57,11 @@
 <section class="relative  w-full h-180 overflow-hidden">
 
 
-   <video width="100%"  controls>
-    <source src="tocimg/wedding..mp4" type="video/mp4">
+   <video class="h-full w-full "  controls autoPlay muted>
+    <source src="tocimg/wedding.mp4" type="video/mp4" />
     </video>
     <!--<img src="tocimg/wedbg.jpg" alt="bg" style="width:100%;">-->
-    <!-- <img src="tocimg/gölge.png" alt="Shadow" style="position: absolute; top: 0; left: 0; width: 100%; height: auto;">-->
+     <img src="tocimg/gölge.png" alt="Shadow" style="position: absolute; top: 0; left: 0; width: 100%; height: auto;">
 
 
 
@@ -74,7 +85,13 @@
             
                 <h1 class="text-6xl font-bold">TOC Grup Hizmetleri</h1>
                 
+                <button class="mt-4 flex w-60 px-6 py-3 items-center gap-10 rounded-full bg-white text-black">
+                Hemen teklif al
+                </button>
             </div>
+            
+            
+        
         </div>
 </section>
 
