@@ -28,11 +28,42 @@ module.exports = {
   }
 }
 
+
+
+module.exports = {
+  theme: {
+    fontSize: {
+      sm: '0.8rem',
+      base: '1rem',
+      xl: '1.25rem',
+      '2xl': '1.563rem',
+      '3xl': '1.953rem',
+      '4xl': '2.5rem',
+      '5xl': '3.052rem',
+    }
+  }
+}
+
 module.exports = {
   theme: {
     extend: {
       colors: {
-        'custom-purple': '#1E1B39',
+        'main-default': '#F2563A',
+        'custom-purple': '#6E6C83',
+      },
+    },
+  },
+};
+
+
+
+module.exports = {
+  theme: {
+    extend: {
+      letterSpacing: {
+        wider: '0.8px',
+        0.64: '0.64px',
+        tight: '0.4px',
       },
     },
   },
@@ -42,11 +73,9 @@ module.exports = {
 module.exports = {
   theme: {
     extend: {
-      colors: {
-        'main-default': '#F2563A',
+      width: {
+        '357': '357.333px',
       },
     },
   },
-  variants: {},
-  plugins: [],
 }
