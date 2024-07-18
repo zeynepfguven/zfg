@@ -2,34 +2,3 @@
 @tailwind components;
 @tailwind utilities;
 
-
-/*
-@media (max-width: 960px) 
-        {
-            .full-height {
-            height: 10vh; 
-            }
-            .banner-container {
-            margin-right: 3rem;
-            }
-            .banner{
-                max-width: 100%; 
-            }
-            .btn {
-            position: relative;
-            margin-top: 20px; 
-            bottom: unset; 
-            left: unset; 
-            transform: unset; 
-            }
-            .banner-text {
-            position: absolute;
-            top: 50%; 
-            left: 150%; 
-        }
-        .lg-text{
-        font-size: 1.2rem; 
-        }
-        }
-        */
-       

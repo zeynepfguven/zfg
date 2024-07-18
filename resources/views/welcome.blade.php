@@ -2,6 +2,7 @@
 <html lang="tr">
 
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TOC Grup Hizmetleri</title>
@@ -10,80 +11,13 @@
     
     <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.4.0/dist/cdn.min.js" defer></script>
 
-    <style>
-        @font-face {
-            font-family: 'Clash Display';
-            src: url('fonts/ClashDisplay-Variable.ttf') format('truetype');
-            font-weight: 500;
-            font-style: normal;
-        }
-
-        body {
-            font-family: 'Clash Display', sans-serif;
-            width: 1200px;
-            margin: 0 auto;
-        }
-
-        header {
-            width: 100%;
-        }
-
-        section {
-            width: 100%;
-        }
-
-        section.relative {
-            height: 720px;
-        }
-
-        video {
-            width: 100vw; 
-            height: 100%; 
-            object-fit: cover; 
-            position: absolute; 
-            top: 0;
-            left: 0;
-        }
-
-        #cards {
-         position: absolute;
-         top: 590px;
-         left: 40px; 
-         right: 40px; 
-         width: calc(100% - 80px); 
-         height: 90px;
     
-        }
-
-        section.box-border {
-            padding: 0 20px;
-        }
-
-        #numbers {
-            height: 160px;
-        }
-
-        .container {
-        left:40px;
-        right: 40px;
-        margin: 0 auto;
-        width: calc(100% - 80px); 
-        }
-
-        :root {
-         --main-default: #F2563A;
-         --custom-purple: #6E6C83;
-         }
-        
-
-    </style>
-
 </head>
 
 <body>
 
 <header class="bg-white shadow w-full">
-    <div class="w-full mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between" style="max-width: 1200px;">
+    <div class="w-full mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
         <!--LOGO-->
         <div class="flex-shrink-0 ml-5 left-10"> 
             <img class="w-12 h-12 mix-blend-exclusion" src="tocimg/logo1.svg" alt="Logo">
@@ -129,7 +63,7 @@
     <video class="w-full" autoplay muted>
         <source src="tocimg/wedding.mp4" type="video/mp4" />
     </video>
-    <img src="tocimg/gölge.png" alt="Shadow" style="position: absolute; top: 0; left: 0; width: 100%; height: auto;">
+    <img src="tocimg/gölge.png" alt="Shadow" class=" absolute top-0 left-0 w-full h-auto" >
 
 <!--CONTENT-->
 
@@ -181,11 +115,11 @@
                 <!--CARDS-->
 
                
-                <div id="cards" class="container box-border text-white font-normal flex justify-between items-start gap-16">
+                <div  class=" left-10 right-10 h-[90px]  mt-590 mb-10 mx-auto w-[calc(100% -80px)] box-border text-white font-normal flex justify-center items-center gap-16">
       
                
 
-                <div class="flex flex-col items-start gap-7 w-1/3">
+                <div class="flex flex-col items-center gap-7 w-1/3">
                 <div clas="flex w-90 h-10 pt-10 justify-center items-center">
                         <p class="tracking-wide	text-center	text-base	font-normal	leading-5 shrink-0	w-90">
                         Organizasyonlarımızda profesyonel personellerimiz ile hizmetinizdeyiz.
@@ -198,13 +132,14 @@
                             <div class="w-px h-0.5 shrink-0 bg-white"></div>
                         </div>
                         <div class="flex h-5 justify-center items-center self-stretch	">
-                            <p class="w-90 self-stretch text-center bg-white text-base font-medium leading-5 tracking-wide opacity-40	">Organizasyon</p>
+                            <p class="text-white text-center text-base not-italic font-medium leading-5 tracking-[0.64] opacity-40	">Organizasyon</p>
+                           
                         </div>
                     </div>
                 </div>
 
-                <div class="flex flex-col items-start gap-7 w-1/3">
-                <div clas="flex w-90 h-10 pt-10 justify-center items-center">
+                <div class="flex flex-col items-center gap-7 w-1/3">
+                <div class="flex w-90 h-10 pt-10 justify-center items-center">
                         <p class="tracking-wide	text-center	text-base	font-normal	leading-5 shrink-0	w-90">
                         Özenle hazırlanan lezzetlerimizle her türlü etkinliğinize renk katıyoruz
 
@@ -217,18 +152,16 @@
                             <div class="w-px h-0.5 shrink-0 bg-white"></div>
                         </div>
                         <div class="flex h-5 justify-center items-center self-stretch	">
-                            <p class="w-90 self-stretch text-center bg-white text-base font-medium leading-5 tracking-wide opacity-40	">Catering</p>
+                            <p class="text-white text-center text-base not-italic font-medium leading-5 tracking-[0.64] opacity-40">Catering</p>
                         </div>
                     </div>
                 </div>
 
-                <div class="flex flex-col items-start gap-7 w-1/3">
+                <div class="flex flex-col items-center gap-7 w-1/3">
                 <div clas="flex w-90 h-10 pt-10 justify-center items-center">
                         <p class="tracking-wide	text-center	text-base	font-normal	leading-5 shrink-0	w-90">
                         İşinizi temiz ve ferah bir ortamda sürdürmeniz için buradayız.
-
-
-                        </>
+                        </p>
                     </div>
                     <div class="flex w-90 flex-col justify-center items-center gap-6">
                         <div class="w-80  h-0.5">
@@ -236,7 +169,7 @@
                             <div class="w-px h-0.5 shrink-0 bg-white"></div>
                         </div>
                         <div class="flex h-5 justify-center items-center self-stretch	">
-                            <p class="w-90 self-stretch text-center bg-white text-base font-medium leading-5 tracking-wide opacity-40	">Temizlikk</>
+                            <p class="text-white text-center text-base not-italic font-medium leading-5 tracking-[0.64] opacity-40">Temizlik </p>
                         </div>
                     </div>
                 </div>
@@ -252,8 +185,8 @@
 </section>
 
 <!--NUMBERS-->
-<section id="numbers" class="box-border relative flex justify-between items-center w-full h-40 overflow-hidden bg-red-500 py-10 px-20">
-    <div class="text-white text-center flex flex-col justify-center h-full w-full">
+<section  class="box-border h-40 relative flex justify-between items-center w-full  overflow-hidden bg-red-500 py-10 px-20">
+    <div class="text-white text-center justify-center flex flex-col  h-full w-full">
         <div class="flex justify-between items-center text-4xl font-semibold leading-[3rem] tracking-wide w-full">
             <div class="flex-1">
                 <p>1280</p>
@@ -287,8 +220,8 @@
 </section>
 
 <!--ABOUT-->
-<section class="max-w-7xl mx-auto flex justify-between py-20 px-10 pt-25 items-center  h-[800px]">
-    <div class="flex max-w-[1200px] justify-between items-center flex-[1_0_0] ">
+<section class="max-w-7xl mx-auto flex justify-between py-20 px-10 pt-25 items-center  ">
+    <div class="flex max-w-[1200px] justify-between items-center flex-[1_0_0] "  >
 
     
 
@@ -350,9 +283,11 @@
 
 </section>
 
-<section id="does" class="box-border flex flex-col	items-center gap-14	px-10 py-20 self-stretch	">
 
-<div class="flex flex-col items-center gap-3 self-stretch ">
+
+<section class="box-border w-full flex flex-col items-center pt-20 pb-80 px-40 self-stretch">
+
+<div class="flex flex-col items-center gap-3 self-stretch py-20 " >
     <div class="flex items-center  gap-2	">
                 <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
                 <path d="M5.84001 8.09598L3.95201 11.04L1.87201 9.53598L4.08001 6.84798L4.01601 6.59198L0.656006 5.69598L1.45601 3.26398L4.72001 4.57598L4.91201 4.41598L4.72001 0.927979H7.28001L7.05601 4.41598L7.28001 4.57598L10.544 3.29598L11.312 5.72798L7.92001 6.59198L7.82401 6.84798L10.064 9.53598L7.98401 11.072L6.12801 8.09598H5.84001Z" fill="#F2563A"/>
@@ -362,21 +297,24 @@
                 
 
     </div>
-    <div class="flex items-center gap-2">
+    <div class="flex items-center gap-2 ">
         <p class="text-center not-italic font-medium text-4xl leading-12 tracking-wide"> 
            <span> Profesyonel </span><br> hizmetler için <span class="text-red-600">teklif al</span>
         </p>
     </div>
 
 </div>
-<div class="flex max-w-7xl	justify-between	items-center	content-center	gap-y-8	self-stretch	">
+
+
+<div class="flex justify-center  items-center content-center gap-8	self-stretch">
     <div class="flex w-90 h-80 min-w-90 flex-col	items-start	gap-4	rounded-lg bg-white	"> 
     <img class="w-[357.333px] h-[240px] object-cover shrink-0 " src="tocimg/p1.svg" alt="p1">
     <div class="flex flex-col items-start gap-1 self-stretch">
         <p class="self-stretch text-xl	not-italic	font-medium	leading-8	tracking-[0.25em]">Organizasyon & Event</p>
         <p class="self-stretch text-base max-h-12 not-italic font-normal leading-5	tracking-[0.16em]">Organizasyonlarımızda profesyonel personellerimiz ile hizmetinizdeyiz.</p>
-        <button></button>
-
+        <div class="flex  items-center gap-1 self-stretch px-1 py-2.5 rounded-lg	">
+        <span class="text-center	text-base	not-italic leading-5	tracking-0.64 font-medium text-red-600	">Detayları gör </span> <img src="tocimg/arrow.svg" alt="btn" class="flex w-4 h-4 justify-center items-center">
+        </div>
     </div>
     </div>
     <div class="flex w-90 h-80 min-w-90 flex-col	items-start	gap-4	rounded-lg bg-white	"> 
@@ -384,7 +322,9 @@
     <div class="flex flex-col items-start gap-1 self-stretch ">
         <p class="self-stretch text-xl	not-italic	font-medium	leading-8	tracking-[0.25em]">Catering</p>
         <p class="self-stretch text-base max-h-12 not-italic font-normal leading-5	tracking-[0.16em]">Özenle hazırlanan lezzetlerimizle her türlü etkinliğinize renk katıyoruz</p>
-        <button></button>
+        <div class="flex  items-center gap-1 self-stretch px-1 py-2.5 rounded-lg	">
+        <span class="text-center	text-base	not-italic leading-5	tracking-0.64 font-medium text-red-600	">Detayları gör </span> <img src="tocimg/arrow.svg" alt="btn" class="flex w-4 h-4 justify-center items-center">
+        </div>
 
     </div>
     </div>
@@ -392,9 +332,11 @@
     <div class="flex w-90 h-80 min-w-90 flex-col	items-start	gap-4	rounded-lg bg-white	"> 
     <img class="w-[357.333px] h-[240px] object-cover shrink-0 " src="tocimg/p3.svg" alt="p3">
     <div class="flex flex-col items-start gap-1 self-stretch ">
-        <p class="self-stretch text-xl	not-italic	font-medium	leading-8	tracking-[0.25em]">Catering</p>
-        <p class="self-stretch text-base max-h-12 not-italic font-normal leading-5	tracking-[0.16em]">Özenle hazırlanan lezzetlerimizle her türlü etkinliğinize renk katıyoruz</p>
-        <button></button>
+        <p class="self-stretch text-xl	not-italic	font-medium	leading-8	tracking-[0.25em]">Temizlik</p>
+        <p class="self-stretch text-base max-h-12 not-italic font-normal leading-5	tracking-[0.16em]">İşinizi temiz ve ferah bir ortamda sürdürmeniz için buradayız.</p>
+        <div class="flex  items-center gap-1 self-stretch px-1 py-2.5 rounded-lg	">
+        <span class="text-center	text-base	not-italic leading-5	tracking-0.64 font-medium text-red-600	">Detayları gör </span> <img src="tocimg/arrow.svg" alt="btn" class="flex w-4 h-4 justify-center items-center">
+        </div>
 
     </div>
     </div>
@@ -404,16 +346,142 @@
 
 </section>
 
+<!--FEEDBACK SECTION-->
+
+<section class="flex flex-col  justify-center items-center self-stretch px-10 py-20 bg-white  ">
+    <div class="flex text-center flex-col  justify-center items-center gap-14 self-stretch">
+
+    
+    <h3 class="text-center not-italic font-medium text-4xl self-stretch tracking-tight leading-[3rem] text-red-600">Müşterilerin <span class=" text-gray-900"> tecrübeleri</span></h3>
+   
+    
+        <div class="flex justify-center items-center content-center	gap-6 self-stretch flex-wrap mt-14">
+
+        <div class="lg:w-6/12 xl:w-3/12 flex flex-col justify-center items-start gap-8 py-8 px-10  flex-basis-0 border-2 border-gray-100 bg-white-custom shadow-custom p-8">
+            <p class="flex flex-col items-start gap-3 self-stretch">
+                <p class="text-body font-medium not-italic tracking-wider text-xl	 leading-8 self-stretch ">“Profesyonel ekip”</p>
+                <p class="text-body text-base not-italic font-normal leading-5 tracking-[0.64] self-stretch ">Firmanın catering hizmeti gerçekten harika! Etkinliğimizde sunulan yemekler hem lezzetli hem de görsel açıdan muhteşemdi. Misafirlerimizden çok olumlu geri dönüşler aldık. Teşekkür ederiz!</p>
+                
+            </p>
+            <div class="flex items-center gap-4">
+            <div class="flex w-14 h-14 justify-center items-center ">  <img src="tocimg/pp1.svg" alt="pp" class="w-14 h-14 shrink-0"></div>
+            <div class="flex flex-col items-start">
+    
+            <p class="text-body text-base not-italic font-medium leading-5 tracking-[0.64]">Mehmet T.</p>
+       
+            <p class="text-body text-base not-italic font-medium leading-5 tracking-[0.64]">İK İstanbul</p>
+            </div>
+          
+           
+            </div>
+        </div>
+
+        <div class="lg:w-6/12 xl:w-3/12 flex flex-col justify-center items-start gap-8 py-8 px-10  flex-basis-0 border-2 border-gray-100 bg-white-custom shadow-custom p-8">
+        <p class="flex flex-col items-start gap-3 self-stretch">
+                <p class="text-body font-medium not-italic tracking-wider text-xl	 leading-8 self-stretch ">“Çok profesyonel”</p>
+                <p class="text-body text-base not-italic font-normal leading-5 tracking-[0.64] self-stretch ">Organizasyon hizmetleri konusunda bu kadar profesyonel ve esnek bir ekip bulmak gerçekten zordu! İsteklerimize hızlıca yanıt verdiler ve etkinliğimizi kusursuz bir şekilde planladılar.</p>
+                
+            </p>
+            <div class="flex items-center gap-4">
+            <div class="flex w-14 h-14 justify-center items-center ">  <img src="tocimg/pp2.svg" alt="pp" class="w-14 h-14 shrink-0"></div>
+            <div class="flex flex-col items-start">
+    
+            <p class="text-body text-base not-italic font-medium leading-5 tracking-[0.64]">Fatma Y.</p>
+       
+            <p class="text-body text-base not-italic font-medium leading-5 tracking-[0.64]">Demirtaş Sistemler</p>
+            </div>
+          
+           
+            </div>
+        </div>
+
+        <div class="lg:w-6/12 xl:w-3/12 flex flex-col justify-center items-start gap-8 py-8 px-10  flex-basis-0 border-2 border-gray-100 bg-white-custom shadow-custom p-8">
+        <p class="flex flex-col items-start gap-3 self-stretch">
+                <p class="text-body font-medium not-italic tracking-wider text-xl	 leading-8 self-stretch ">“Profesyonel ekip”</p>
+                <p class="text-body text-base not-italic font-normal leading-5 tracking-[0.64] self-stretch ">Firmanın catering hizmeti gerçekten harika! Etkinliğimizde sunulan yemekler hem lezzetli hem de görsel açıdan muhteşemdi. Misafirlerimizden çok olumlu geri dönüşler aldık. Teşekkür ederiz!</p>
+                
+            </p>
+            <div class="flex items-center gap-4">
+            <div class="flex w-14 h-14 justify-center items-center ">  <img src="tocimg/pp3.svg" alt="pp" class="w-14 h-14 shrink-0"></div>
+            <div class="flex flex-col items-start">
+    
+            <p class="text-body text-base not-italic font-medium leading-5 tracking-[0.64]">Ayşe K.</p>
+       
+            <p class="text-body text-base not-italic font-medium leading-5 tracking-[0.64]">MFE Teknoloji</p>
+            </div>
+          
+           
+            </div>
+        </div>
+    </div>
+    <div class="flex justify-center items-center gap-4 mt-8">
+       
+       <img src="tocimg/arrow1.svg" alt="pre" class="flex w-6 h-6 justify-center items-center">
+       <img src="tocimg/arrow2.svg" alt="next" class="flex w-6 h-6 justify-center items-center">
+
+        </div>
+    </div>
+
+</section>
+
+<!--footer-->
+<footer class="bg-gray-800 text-white py-12">
+  <div class="container mx-auto">
+    <div class="grid grid-cols-3 gap-8">
+      <div class="flex flex-col items-start"> 
+        <div class="flex items-center">
+          <img src="tocimg/logo2.svg" alt="TOCGRUP Logo" class="h-12 w-12">
+          <span class="ml-2 text-3xl font-bold">TOCGRUP</span>
+          
+        </div>
+
+        <p class="mt-2 text-sm text-body font-clash-display leading-tight">İşinizin başarısı için doğru hizmetleri almanın zamanı geldi.</p>
+
+        </div>  
+      <div class="flex flex-col items-center">  <p class="mt-2 text-sm">Hızlı Erişim</p>
+        <ul class="mt-4">
+          <li><a href="#" class="hover:text-gray-300">Ana Sayfa</a></li>
+          <li><a href="#" class="hover:text-gray-300">Organizasyon & Event</a></li>
+          <li><a href="#" class="hover:text-gray-300">Catering</a></li>
+          <li><a href="#" class="hover:text-gray-300">Temizlik</a></li>
+          <li><a href="#" class="hover:text-gray-300">Blog</a></li>
+          <li><a href="#" class="hover:text-gray-300">İletişim</a></li>
+        </ul>
+      </div>
+      <div class="flex flex-col items-end">
+        <div class="flex flex-col items-start">
+          <p class="text-lg font-bold">İletişim</p>
+          <p class="mt-2 text-sm">Bize e-posta gönder</p>
+          <a href="mailto:info@tocgrup.com" class="mt-4 hover:text-gray-300">info@tocgrup.com</a>
+          <p class="mt-4 text-sm">Adres</p>
+          <address class="mt-2"> Atakent, Mithatpaşa Cd. Çağla Plaza<br> NO:16 IC Kap NO:18, 34670<br> Ümraniye/Istanbul </address>
+        </div>
+      </div>
+    </div>
+     <div class="mt-8 flex justify-end items-center">
+      <p>&copy; 2024 TOC Grup</p>
+    </div>
+  </div>
+</footer>
+
+<!--
+<section class="flex flex-col items-start self-stretch py-0 px-10">
+    <div class="flex py-10 px-0 justify-between items-start self-stretch">
+        <div class="flex w-[294px] flex-col items-start gap-4">
+            <div class="flex justify-center items-center gap-2"></div>
+            <p class="not-italic font-light leading-4 text-sm tracking-[0.035]">İşinizin başarısı için doğru hizmetleri almanın zamanı geldi.</p>
+           
+
+        </div>
+        <div class="flex w-[352.63] justify-center items-center gap-10 ">
+            <img src="tocimg/logo2.svg" alt="" class="w-12 h-12">
+        </div>
+        <div class="flex flex-col items-start gap-2"></div>
+    <div class="flex py-4 px-0 justify-between items-center self-stretch"></div>
+  
+</section>
+-->
 
 
-
-
-
-
-
-
-
-    <main>
-    </main>
 </body>
 </html>
