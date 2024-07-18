@@ -464,23 +464,7 @@
   </div>
 </footer>
 
-<!--
-<section class="flex flex-col items-start self-stretch py-0 px-10">
-    <div class="flex py-10 px-0 justify-between items-start self-stretch">
-        <div class="flex w-[294px] flex-col items-start gap-4">
-            <div class="flex justify-center items-center gap-2"></div>
-            <p class="not-italic font-light leading-4 text-sm tracking-[0.035]">İşinizin başarısı için doğru hizmetleri almanın zamanı geldi.</p>
-           
 
-        </div>
-        <div class="flex w-[352.63] justify-center items-center gap-10 ">
-            <img src="tocimg/logo2.svg" alt="" class="w-12 h-12">
-        </div>
-        <div class="flex flex-col items-start gap-2"></div>
-    <div class="flex py-4 px-0 justify-between items-center self-stretch"></div>
-  
-</section>
--->
 
 
 </body>
