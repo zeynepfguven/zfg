@@ -1,24 +1,7 @@
 /** @type {import('tailwindcss').Config} */
-export default {
-  content: [
-    "./resources/**/*.blade.php",
-    "./resources/**/*.js",
-    "./resources/**/*.vue",
-  ],  theme: {
-    extend: {},
-  },
-  plugins: [],
-}
 
-// tailwind.config.js
-module.exports = {
-  mode: 'jit',
-  purge: ['./src/**/*.{js,jsx,ts,tsx}', './public/index.html'],
-  theme: {
-    extend: {},
-  },
-  plugins: [],
-}
+
+
 module.exports = {
   theme: {
     extend: {
@@ -35,7 +18,7 @@ module.exports = {
         '112': '28rem', // 448px
         '128': '32rem', // 512px
         '144': '36rem', // 576px
-        // Daha fazla boyut ekleyebilirsin
+        
       }
     }
   }
@@ -115,16 +98,18 @@ module.exports = {
     extend: {
       colors: {
         body: 'var(--body, #6E6C83)',
+       
       },
     },
   },
   plugins: [],
 }
-// tailwind.config.js
+
 module.exports = {
   theme: {
     extend: {
       colors: {
+      
         'gray-100': 'var(--gray-100, #DEDEE9)',
         'white-custom': 'var(--white, #FFF)',
       },
@@ -155,4 +140,15 @@ module.exports = {
     },
   },
   plugins: [],
+}
+
+
+module.exports = {
+  theme: {
+    extend: {
+      fontFamily: {
+        rajdhani: ['Rajdhani', 'sans-serif'],
+      },
+    },
+  },
 }
